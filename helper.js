@@ -23,7 +23,7 @@ const departmentTags = {
 
   try {
     // ✅ Call your backend HMS API
-    const response = await axios.get("http://localhost:8080/hms/doct/api/v1/get"); 
+    const response = await axios.get("https://hms-backend-1-3.onrender.com/hms/doct/api/v1/get"); 
     doctors = response.data.allDoctor || [];
     console.log("all doctors->>>",doctors);
   } catch (error) {
